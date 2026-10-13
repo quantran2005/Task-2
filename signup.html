@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Create a Management System account.">
+  <title>Create account | Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="auth-page" data-page="signup">
+  <main class="auth-wrap">
+    <div class="auth-heading">
+      <a class="auth-logo" href="index.html" aria-label="Management System home">M</a>
+      <h1>Create an Account</h1>
+      <p>Get started organizing your work today.</p>
+    </div>
+    <section class="auth-card">
+      <h2>Sign up</h2>
+      <p class="auth-intro">Enter your details to create your account.</p>
+      <form id="signup-form">
+        <label for="signup-name">Full Name</label>
+        <input id="signup-name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+        <label for="signup-email">Email Address</label>
+        <input id="signup-email" name="email" type="email" placeholder="name@example.com" autocomplete="email" required>
+        <label for="signup-password">Password</label>
+        <input id="signup-password" name="password" type="password" placeholder="At least 6 characters" minlength="6" autocomplete="new-password" required>
+        <button class="button auth-submit" type="submit">Create Account</button>
+      </form>
+      <p class="auth-switch">Already have an account? <a href="login.html">Sign in</a></p>
+    </section>
+    <footer class="auth-footer">© 2026 My Website. All rights reserved.</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

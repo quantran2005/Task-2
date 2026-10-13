@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sign in to your Management System account.">
+  <title>Login | Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="auth-page" data-page="login">
+  <main class="auth-wrap">
+    <div class="auth-heading">
+      <a class="auth-logo" href="index.html" aria-label="Management System home">M</a>
+      <h1>Welcome Back!</h1>
+      <p>Sign in to continue to your account.</p>
+    </div>
+    <section class="auth-card">
+      <h2>Login to your account</h2>
+      <p class="auth-intro">Enter your email and password to get started.</p>
+      <form id="login-form">
+        <label for="login-email">Email Address</label>
+        <input id="login-email" name="email" type="email" placeholder="name@example.com" autocomplete="email" required>
+        <div class="label-row"><label for="login-password">Password</label><a href="#" id="forgot-password">Forgot password?</a></div>
+        <div class="password-field"><input id="login-password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required><button type="button" class="show-password" aria-label="Show password" aria-pressed="false">Show</button></div>
+        <label class="remember-option"><input id="remember-me" type="checkbox"> <span>Remember me</span></label>
+        <button class="button auth-submit" type="submit">Sign In</button>
+      </form>
+      <p class="auth-switch">Don’t have an account? <a href="signup.html">Create an account</a></p>
+    </section>
+    <footer class="auth-footer">© 2026 My Website. All rights reserved.</footer>
+  </main>
+  <div class="page-alert-backdrop" id="login-alert" hidden>
+    <section class="page-alert" role="alertdialog" aria-modal="true" aria-labelledby="page-alert-title" aria-describedby="page-alert-message">
+      <h2 id="page-alert-title">This page says</h2>
+      <p id="page-alert-message">Login successful!</p>
+      <button class="page-alert-ok" type="button">OK</button>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

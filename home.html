@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore our web development courses.">
+  <title>Home | Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="courses">
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Main navigation">
+      <a class="brand" href="index.html">Management System</a>
+      <div class="nav-menu">
+        <button class="nav-menu-toggle" type="button" aria-expanded="false" aria-haspopup="true">Home <span aria-hidden="true">▾</span></button>
+        <div class="nav-dropdown">
+          <a href="index.html">Landing Page</a>
+          <a href="login.html">Login</a>
+          <a href="signup.html">Sign Up</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="courses-main">
+    <section class="welcome-banner">
+      <h1>Welcome to My Website</h1>
+      <p>Learn web development with our courses.</p>
+    </section>
+    <h2 class="courses-heading">Our Courses</h2>
+    <section class="course-grid" aria-label="Available courses">
+      <article class="course-card course-html">
+        <h3>HTML</h3>
+        <p>Learn how to create the structure of web pages using headings, paragraphs, images, and links.</p>
+        <button class="course-button" type="button" data-course="html">Learn More</button>
+      </article>
+      <article class="course-card course-css">
+        <h3>CSS</h3>
+        <p>Learn how to style web pages with colors, fonts, spacing, and attractive layouts.</p>
+        <button class="course-button" type="button" data-course="css">Learn More</button>
+      </article>
+      <article class="course-card course-bootstrap">
+        <h3>Bootstrap</h3>
+        <p>Build responsive websites quickly using Bootstrap’s grid system and components.</p>
+        <button class="course-button" type="button" data-course="bootstrap">Learn More</button>
+      </article>
+      <article class="course-card course-javascript">
+        <h3>JavaScript</h3>
+        <p>Make web pages interactive with button clicks, form validation, and dynamic content.</p>
+        <button class="course-button" type="button" data-course="javascript">Learn More</button>
+      </article>
+    </section>
+  </main>
+  <footer class="site-footer courses-footer"><small>Copyright 2026 Management System</small></footer>
+
+  <div class="modal-backdrop" id="course-modal" hidden>
+    <section class="course-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <header class="modal-header"><h2>Course Details</h2><button class="modal-x" type="button" aria-label="Close dialog">×</button></header>
+      <div class="modal-body"><h3 id="modal-title"></h3><p id="modal-description"></p></div>
+      <footer class="modal-footer"><button class="modal-close button" type="button">Close</button></footer>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
